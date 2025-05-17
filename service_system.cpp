@@ -106,7 +106,7 @@ void average ()
 	{
 		total_idle+=i;
 	}
-    cout<< "Probability Of Idle: "<< total_idle/idle_time_defult*100 << " %" << endl ;
+    cout<< "Probability Of Idle: "<< total_idle/idle_time_defult << endl ;
 
 	total_idle=0.0;
 	for(double i : doctor_idle_time ) 
@@ -115,7 +115,7 @@ void average ()
 	} 
 	//avg of doctor idle time depend on total simulation time:
 	double total_simulation = examination_end[n-1] - arrival_time[0];
-    cout<< "Total Idle Time: "<< total_idle<< endl ;
+    cout<< "Total Idle Time: "<< total_idle << " minute" << endl ;
     cout<< "Average doctor Idle: "<< total_idle / total_simulation << " minute" << endl ; 
 
 
